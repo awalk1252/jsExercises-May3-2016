@@ -12,6 +12,8 @@
 function exampleTwo(flag) {
   if (flag) {
     return "true";
+    
+    
   }
 }
 
@@ -22,8 +24,11 @@ function exampleTwo(flag) {
   ie:
     checkBirthday(true) -> "It's you're birthday!"
 */
-
-
+function checkBirthday(may27){
+if (may27)
+    return "It's you're birthday!";
+  
+}
 /*
   Create a function named 'checkHoliday' with one parameter.
   Name the parameter anything you want
@@ -31,7 +36,13 @@ function exampleTwo(flag) {
   ie:
     checkHoliday(true) -> "It's time to go to school!"
 */
+function checkHoliday(christmas){
 
+if (!christmas)
+
+  return "It's time to go to school!";
+  
+}
 
 /*
   Create a function named 'light' with one parameter.
@@ -41,7 +52,14 @@ function exampleTwo(flag) {
     light(true) -> "Turn light off"
     light(false) -> "Turn light on"
 */
-
+function light(bulb){
+  if (bulb)
+  return "Turn light off"
+  
+  if (!bulb)
+  
+  return "Turn light on"
+} 
 
 /*
   Create a function named 'engine' with two parameters.
@@ -53,9 +71,18 @@ function exampleTwo(flag) {
     engine(false, true) -> "Shutdown"
     engine(false, false) -> "Shutdown"
 */
+function engine(drive,brake){
+  if(drive && brake)
+  
+return "Rev up"
 
+else(!drive)
 
-/*
+return "Shutdown"
+
+  
+};
+/*0
   Create a function named 'gradeScore' with one parameter.
   Name the parameter anything you want
   Return "A" if the parameter is greater than 90, "B" if the parameter is greater than 80, otherwise return false
@@ -65,8 +92,19 @@ function exampleTwo(flag) {
     gradeScore(81) -> "B"
     gradeScore(80) -> "C"
 */
-
-
+ function gradeScore(party){
+ if (party > 90){
+ return "A";
+}
+else if(party > 80){
+  return "B"
+}
+ else{
+   return "C"
+ }
+ 
+ 
+}
 /*
   Create a function named 'imDone' with three parameters.
   Name the parameters anything you want
@@ -81,3 +119,20 @@ function exampleTwo(flag) {
     imDone(false, false, true) -> "no"
     imDone(false, false, false) -> "no"
 */
+
+function imDone(finish, done, score) {
+  if (score && done || finish) {
+    if (score || done) {
+      return "yes";
+    }
+    else {
+      return "no";
+    }
+  }
+  else if (score && finish) {
+    return "no";
+  }
+  else {
+    return "no";
+  }
+}
